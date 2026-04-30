@@ -1,0 +1,26 @@
+2026-03-07 16:53:58 | INFO | {"firstName":"حميدة","lastName":"أشرف","email":"hamidaashraf056@gmail.com","password":"Password123","nationalId":"12345678901234","birthDate":"1990-01-15","phoneNumber":"01012345678"}
+2026-03-07 16:53:59 | ERROR | E11000 duplicate key error collection: ehr_system.users index: nationalId_1 dup key: { nationalId: 12345678901234.0 }
+2026-03-07 16:54:19 | INFO | {"firstName":"حميدة","lastName":"أشرف","email":"hamidaashraf056@gmail.com","password":"Password123","nationalId":"12345668901234","birthDate":"1990-01-15","phoneNumber":"01022345678"}
+2026-03-07 17:41:36 | INFO | {"firstName":"حميدة","lastName":"أشرف","email":"hamidaashraf056@gmail.com","password":"Password123","nationalId":"12345668901234","birthDate":"1990-01-15","phoneNumber":"01022345678"}
+2026-03-07 17:43:24 | INFO | {"firstName":"حميده","lastName":"أشرف","email":"test.hamida.2024@gmail.com","password":"Password123","nationalId":"11111111111111","birthDate":"1990-01-15","phoneNumber":"01008765432"}
+2026-03-07 17:53:56 | INFO | {"firstName":"محمود","lastName":"علي","email":"hamidaashraf056@gmail.com","password":"Password123","nationalId":"99999999999999","birthDate":"1990-01-15","phoneNumber":"01111111111"}
+2026-03-07 18:40:42 | INFO | {"firstName":"علي","lastName":"محمد","email":"ali.new@test.com","password":"Password123","nationalId":"33333333333333","birthDate":"1990-01-15","phoneNumber":"01555555555"}
+2026-03-14 18:52:23 | INFO | {"firstName":"محمود","lastName":"علي","email":"mahmoud.ali.2024@test.com","password":"Password333","nationalId":"11111111111333","birthDate":"1990-01-15","phoneNumber":"01111111333"}
+2026-03-14 18:53:47 | INFO | {"email":"mahmoud.ali.2024@test.com","password":"Password333"}
+2026-03-14 19:27:18 | ERROR | jwt expired
+2026-03-14 19:28:47 | ERROR | jwt expired
+2026-03-14 19:31:10 | ERROR | jwt expired
+2026-03-14 19:32:09 | ERROR | jwt expired
+2026-03-14 20:53:29 | ERROR | Illegal arguments: undefined, string
+2026-03-14 21:06:47 | INFO | {"firstName":"حمادة","lastName":"أشرف","email":"hamada.ashraf.test@gmail.com","password":"TestPass123","nationalId":"77777777777777","birthDate":"1990-01-15","phoneNumber":"01777777777"}
+2026-03-14 21:14:25 | INFO | {"firstName":"علي","lastName":"محمود","email":"ali.mahmoud.new.2024@gmail.com","password":"TestPass123","nationalId":"55555555555555","birthDate":"1990-01-15","phoneNumber":"01555555555"}
+2026-03-14 21:14:26 | ERROR | E11000 duplicate key error collection: ehr_system.users index: phoneNumber_1 dup key: { phoneNumber: 1555555555 }
+2026-03-14 21:14:42 | INFO | {"firstName":"علي","lastName":"محمود","email":"ali.mahmoud.new.2024@gmail.com","password":"TestPass123","nationalId":"55555555555555","birthDate":"1990-01-15","phoneNumber":"01555555558"}
+2026-03-15 00:08:29 | INFO | {"firstName":"أحمد","lastName":"محمد","email":"ahmed.complete@test.com","password":"Ahmed123456","nationalId":"66666666666666","birthDate":"1992-05-20","phoneNumber":"01666666666"}
+2026-04-21 00:11:58 | INFO | {"firstName":"أحمد","lastName":"محمد","email":"ahmed@test.com","password":"123456","nationalId":"12345678901234","phoneNumber":"01234567890","birthDate":"1990-01-01"}
+2026-04-21 00:12:32 | INFO | {"firstName":"علي","lastName":"محمد","email":"ali@test.com","password":"123456","nationalId":"12345678901234","phoneNumber":"01234567890","birthDate":"1990-01-01"}
+2026-04-21 00:12:59 | INFO | {"firstName":"علي","lastName":"محمد","email":"ali@tistt.com","password":"123456","nationalId":"12345678901234","phoneNumber":"01234567890","birthDate":"1990-01-01"}
+2026-04-21 00:12:59 | ERROR | E11000 duplicate key error collection: ehr_system.users index: nationalId_1 dup key: { nationalId: 12345678901234.0 }
+2026-04-21 00:13:20 | INFO | {"firstName":"علي","lastName":"محمد","email":"ali@tistt.com","password":"123456","nationalId":"12345677701234","phoneNumber":"01234577890","birthDate":"1990-01-01"}
+2026-04-21 00:15:00 | INFO | {"email":"ali@tistt.com","password":"123456"}
+2026-04-21 00:18:20 | ERROR | Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: ehr_system.users index: phoneNumber_1 dup key: { phoneNumber: 1111111111 }
