@@ -22,6 +22,14 @@ app.use('/uploads', express.static('uploads'));
 app.use('/reports', express.static('reports'));
 
 app.use('/api', routes)
+// Main route
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'EHR System API is running!',
+    status: 'success',
+    endpoints: ['/api/patients', '/api/doctors', '/api/appointments']
+  });
+});
 
 // const crypto = require("crypto");
 // console.log(crypto.randomBytes(16).toString("hex"));
