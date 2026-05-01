@@ -3,7 +3,7 @@ const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
 const cookieParser = require("cookie-parser")
-const routes = require("./routes")
+const routes = require("./routes/index")
 const compression = require("compression")
 
 app.use(compression())
