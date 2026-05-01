@@ -1,9 +1,15 @@
 require("dotenv").config()
+
+// Temporary fix for Vercel
+if (!process.env.JWT_SECRET) {
+  process.env.JWT_SECRET = "mySuperSecretKey123456789";
+}
+
 const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
 const cookieParser = require("cookie-parser")
-const routes = require("./routes/index")
+const routes = require("./routes")
 const compression = require("compression")
 
 app.use(compression())
@@ -22,17 +28,15 @@ app.use('/uploads', express.static('uploads'));
 app.use('/reports', express.static('reports'));
 
 app.use('/api', routes)
+
 // Main route
 app.get('/', (req, res) => {
   res.json({ 
     message: 'EHR System API is running!',
     status: 'success',
-    endpoints: ['/api/patients', '/api/doctors', '/api/appointments']
+    endpoints: ['/api/patients/list', '/api/doctors', '/api/appointments']
   });
 });
-
-// const crypto = require("crypto");
-// console.log(crypto.randomBytes(16).toString("hex"));
 
 const url = process.env.MONGODB_URI
 console.log("Connecting to database at:", url)
